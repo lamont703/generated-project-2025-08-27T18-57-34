@@ -1,0 +1,1 @@
+const contentSection = document.getElementById('content');fetch('assets/dummy-data.json').then(response => response.json()).then(data => {data.forEach(item => {const element = document.createElement('p');element.textContent = item.name;contentSection.appendChild(element);});}).catch(error => console.error('Error loading data:', error));
